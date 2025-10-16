@@ -26,3 +26,6 @@ C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\obj\Debug\net8.0\Healt
 C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\obj\Debug\net8.0\ref\HealthApp.dll
 C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\obj\Debug\net8.0\HealthApp.RazorAssemblyInfo.cache
 C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\obj\Debug\net8.0\HealthApp.RazorAssemblyInfo.cs
+C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\bin\Debug\net8.0\HealthApp.staticwebassets.runtime.json
+C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\obj\Debug\net8.0\scopedcss\projectbundle\HealthApp.bundle.scp.css

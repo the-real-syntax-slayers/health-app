@@ -10,7 +10,7 @@ public class PatientController : Controller
         var patients = new List<Patient>();
         var patient1 = new Patient();
         patient1.PatientId = 1;
-        patient1.Name = "Guslem";
+        patient1.Name = "Gushlem";
         patients.Add(patient1);
         return View(patients);
     }

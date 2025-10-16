@@ -19,7 +19,7 @@ public class BookingController : Controller
         var booking1 = new Booking
         {
             BookingId = 1,
-            Date = new DateTime(2025, 1, 1, 10, 30, 0) // Year, Month, Day, Hour, Minute, Second
+            Date = new DateTime(2025, 1, 1, 10, 30, 0), // Year, Month, Day, Hour, Minute, Second
         };
         bookings.Add(booking1);
         return bookings;

@@ -1,11 +1,50 @@
 {
   "Version": 1,
-  "Hash": "ocLbOCB5WTkkw2g5E1qSQZ0liWTJa+hGpml+35teFc4=",
+  "Hash": "Oz5Wm174X5WbvqRwlG3wI9u4MylhuxIrS1b+ki4LDBg=",
   "Source": "HealthApp",
   "BasePath": "_content/HealthApp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HealthApp.styles.css",
+      "SourceId": "HealthApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/HealthApp",
+      "RelativePath": "HealthApp.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HealthApp.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HealthApp.bundle.scp.css",
+      "SourceId": "HealthApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/HealthApp",
+      "RelativePath": "HealthApp.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HealthApp.bundle.scp.css"
+    }
+  ]
 }
