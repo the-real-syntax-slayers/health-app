@@ -24,3 +24,5 @@ C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\obj\Debug\net8.0\refin
 C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\obj\Debug\net8.0\HealthApp.pdb
 C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\obj\Debug\net8.0\HealthApp.genruntimeconfig.cache
 C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\obj\Debug\net8.0\ref\HealthApp.dll
+C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\obj\Debug\net8.0\HealthApp.RazorAssemblyInfo.cache
+C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\obj\Debug\net8.0\HealthApp.RazorAssemblyInfo.cs

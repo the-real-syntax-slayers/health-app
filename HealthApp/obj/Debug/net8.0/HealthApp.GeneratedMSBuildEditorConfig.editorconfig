@@ -17,3 +17,7 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/stian/Documents/IT/DAVE3625/health-app/HealthApp/Views/Booking/Calendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xDYWxlbmRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
