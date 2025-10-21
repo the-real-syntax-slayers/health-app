@@ -1,5 +1,6 @@
 using HealthApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace HealthApp.Controllers;
 
@@ -21,6 +22,24 @@ public class BookingController : Controller
         //  var bookingsViewModel = new BookingsViewModel(bookings, "Calendar"); denne linja fungerer ikke før vi
         // har lagd ViewModel klassen
         //var bookings = GetBookings();
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Booking booking)
+    {
+        if (ModelState.IsValid)
+        {
+            _bookingDbContext.Bookings.Add(booking);
+            _bookingDbContext.SaveChanges();
+            return RedirectToAction(nameof(Table));
+        }
+        return View(booking);
     }
 
     public List<Booking> GetBookings()
