@@ -1,0 +1,30 @@
+@model Booking
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h2>Create New Booking</h2>
+
+<form asp-action="Create" asp-controller="Booking" method="post">
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label asp-for="BookingId"></label>
+        <input asp-for="BookingId" class="form-control" />
+        <span asp-validation-for="BookingId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Date"></label>
+        <input asp-for="Date" type="datetime-local" class="form-control" />
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PatientId"></label>
+        <input asp-for="PatientId" class="form-control" />
+        <span asp-validation-for="PatientId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-action="Calendar" class="btn btn-secondary">Back to Booking</a>
+</form>

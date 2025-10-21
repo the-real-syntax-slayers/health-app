@@ -1,4 +1,4 @@
-@model IEnumerable<HealthApp.Models.Booking>
+@model BookingsViewModel
 
 <div class="container">
     <h1>@ViewBag.CurrentViewName</h1>
@@ -10,7 +10,7 @@
             <th>Date</th>
             <th>Patient</th>
         </tr>
-        @foreach (var booking in Model)
+        @foreach (var booking in Model.Bookings)
         {
             <tr>
                 <td>@booking.BookingId</td>

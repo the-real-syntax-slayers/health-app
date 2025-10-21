@@ -1,4 +1,5 @@
 using HealthApp.Models;
+using HealthApp.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
@@ -16,11 +17,10 @@ public class BookingController : Controller
     public IActionResult Calendar()
     {
         List<Booking> bookings = _bookingDbContext.Bookings.ToList();
-        ViewBag.CurrentViewName = "Calendar";
-        return View(bookings);
+        var bookingsViewModel = new BookingsViewModel(bookings, "Calendar");
+        // ViewBag.CurrentViewName = "Calendar";
+        return View(bookingsViewModel);
 
-        //  var bookingsViewModel = new BookingsViewModel(bookings, "Calendar"); denne linja fungerer ikke før vi
-        // har lagd ViewModel klassen
         //var bookings = GetBookings();
     }
 
@@ -31,13 +31,14 @@ public class BookingController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Create(Booking booking)
     {
         if (ModelState.IsValid)
         {
             _bookingDbContext.Bookings.Add(booking);
             _bookingDbContext.SaveChanges();
-            return RedirectToAction(nameof(Table));
+            return RedirectToAction(nameof(Calendar));
         }
         return View(booking);
     }
