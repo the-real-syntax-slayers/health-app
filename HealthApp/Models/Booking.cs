@@ -7,7 +7,10 @@ namespace HealthApp.Models
         public int BookingId { get; set; }
         public string? Description { get; set; }
         public DateTime Date { get; set; }
-        // public virtual Patient Patient { get; set; } = default!;
+
+        public int PatientId { get; set; }
+        public Patient Patient { get; set; } = default!;
+
 
     }
 

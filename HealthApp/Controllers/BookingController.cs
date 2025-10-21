@@ -5,13 +5,23 @@ namespace HealthApp.Controllers;
 
 public class BookingController : Controller
 {
+
+    private readonly BookingDbContext _bookingDbContext;
+
+    public BookingController(BookingDbContext bookingDbContext)
+    {
+        _bookingDbContext = bookingDbContext;
+    }
     public IActionResult Calendar()
     {
-        var bookings = GetBookings();
+        List<Booking> bookings = _bookingDbContext.Bookings.ToList();
         ViewBag.CurrentViewName = "Calendar";
         return View(bookings);
-    }
 
+        //  var bookingsViewModel = new BookingsViewModel(bookings, "Calendar"); denne linja fungerer ikke før vi
+        // har lagd ViewModel klassen
+        //var bookings = GetBookings();
+    }
 
     public List<Booking> GetBookings()
     {

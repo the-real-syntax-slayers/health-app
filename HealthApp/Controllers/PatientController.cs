@@ -11,6 +11,7 @@ public class PatientController : Controller
         var patient1 = new Patient();
         patient1.PatientId = 1;
         patient1.Name = "Gushlem";
+        patient1.Description = "Vondt i maven";
         patients.Add(patient1);
         return View(patients);
     }
