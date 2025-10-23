@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace HealthApp.Controllers
 {
     public class HomeController : Controller

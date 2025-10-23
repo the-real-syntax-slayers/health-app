@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using HealthApp.Models;
 
-namespace HealthApp.Models;
+namespace HealthApp.DAL;
 
 public class BookingDbContext : DbContext
 {

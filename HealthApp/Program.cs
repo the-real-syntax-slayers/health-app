@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using HealthApp.Models;
+using HealthApp.DAL;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,8 @@ builder.Services.AddDbContext<BookingDbContext>(options =>
     options.UseSqlite(
         builder.Configuration["ConnectionStrings:BookingDbContextConnection"]);
 });
+
+builder.Services.AddScoped<IBookingRepository, BookingRepository>();
 
 var app = builder.Build();
 

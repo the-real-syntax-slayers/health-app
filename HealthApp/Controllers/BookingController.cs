@@ -2,22 +2,24 @@ using HealthApp.Models;
 using HealthApp.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using HealthApp.DAL;
 
 namespace HealthApp.Controllers;
 
 public class BookingController : Controller
 {
 
-    private readonly BookingDbContext _bookingDbContext;
+    private readonly IBookingRepository _bookingRepository;
 
-    public BookingController(BookingDbContext bookingDbContext)
+    public BookingController(IBookingRepository bookingRepository)
     {
-        _bookingDbContext = bookingDbContext;
+        _bookingRepository = bookingRepository;
     }
 
     public async Task<IActionResult> Calendar()
     {
-        List<Booking> bookings = await _bookingDbContext.Bookings.ToListAsync();
+        // List<Booking> 
+        var bookings = await _bookingRepository.GetAll();
         var bookingsViewModel = new BookingsViewModel(bookings, "Calendar");
         return View(bookingsViewModel);
     }
@@ -38,8 +40,9 @@ public class BookingController : Controller
         Console.WriteLine(booking.Patient);
         if (!ModelState.IsValid)
         {
-            _bookingDbContext.Bookings.Add(booking);
-            await _bookingDbContext.SaveChangesAsync();
+            // _bookingDbContext.Bookings.Add(booking);
+            // await _bookingDbContext.SaveChangesAsync();
+            await _bookingRepository.Create(booking);
             return RedirectToAction(nameof(Calendar));
         }
         Console.WriteLine("Return 2");
@@ -49,7 +52,7 @@ public class BookingController : Controller
     [HttpGet]
     public async Task<IActionResult> Update(int id)
     {
-        var booking = await _bookingDbContext.Bookings.FindAsync(id);
+        var booking = await _bookingRepository.GetItemById(id);
         if (booking == null)
         {
             return NotFound();
@@ -62,8 +65,7 @@ public class BookingController : Controller
     {
         if (!ModelState.IsValid)
         {
-            _bookingDbContext.Bookings.Update(booking);
-            await _bookingDbContext.SaveChangesAsync();
+            await _bookingRepository.Update(booking);
             return RedirectToAction(nameof(Calendar));
         }
         return View(booking);
@@ -72,7 +74,7 @@ public class BookingController : Controller
     [HttpGet]
     public async Task<IActionResult> Delete(int id)
     {
-        var booking = await _bookingDbContext.Bookings.FindAsync(id);
+        var booking = await _bookingRepository.GetItemById(id);
         if (booking == null)
         {
             return NotFound();
@@ -83,13 +85,7 @@ public class BookingController : Controller
     [HttpPost]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
-        var booking = await _bookingDbContext.Bookings.FindAsync(id);
-        if (booking == null)
-        {
-            return NotFound();
-        }
-        _bookingDbContext.Bookings.Remove(booking);
-        await _bookingDbContext.SaveChangesAsync();
+        var booking = await _bookingRepository.Delete(id);
         return RedirectToAction(nameof(Calendar));
     }
 }
