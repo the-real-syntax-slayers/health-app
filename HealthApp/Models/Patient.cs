@@ -9,7 +9,8 @@ namespace HealthApp.Models
 
         public string? Description { get; set; }
 
-        public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
+        // navigation property
+        public virtual ICollection<Booking> Bookings { get; set; } = new List<Booking>();
     }
 
 }

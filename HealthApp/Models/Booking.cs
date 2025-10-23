@@ -12,10 +12,14 @@ namespace HealthApp.Models
         public DateTime Date { get; set; }
 
         public int PatientId { get; set; }
-        public Patient Patient { get; set; } = default!;
+
+        // navigation property
+        public virtual Patient Patient { get; set; } = default!;
 
         public int EmployeeId { get; set; }
-        public Employee Employee { get; set; } = default!;
+
+        // navigation property
+        public virtual Employee Employee { get; set; } = default!;
 
     }
 

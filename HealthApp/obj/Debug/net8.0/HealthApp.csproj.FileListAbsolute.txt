@@ -271,3 +271,5 @@ C:/Users/stian/Documents/IT/DAVE3625/health-app/HealthApp/obj/Debug/net8.0/Healt
 /Users/gustav/Documents/School/Webapplikasjoner(ITPE3200)/Projects/health-app/HealthApp/obj/Debug/net8.0/HealthApp.genruntimeconfig.cache
 /Users/gustav/Documents/School/Webapplikasjoner(ITPE3200)/Projects/health-app/HealthApp/obj/Debug/net8.0/ref/HealthApp.dll
 >>>>>>> 828ae07111733b57c354d13c6248b489218c15a0
+C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
