@@ -9,6 +9,8 @@
             <th>Description</th>
             <th>Date</th>
             <th>Patient</th>
+            <th>Employee</th>
+            <th>Actions</th>
         </tr>
         @foreach (var booking in Model.Bookings)
         {
@@ -17,6 +19,11 @@
                 <td>@booking.Description</td>
                 <td>@booking.Date.ToString("")</td>
                 <td>@booking.PatientId</td>
+                <td>@booking.EmployeeId</td>
+                <td>
+                    <a asp-action="Update" asp-route-id="@booking.BookingId">Update</a>
+                    <a asp-action="Delete" asp-route-id="@booking.BookingId">Delete</a>
+                </td>
             </tr>
         }
     </table>

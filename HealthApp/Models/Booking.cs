@@ -13,6 +13,10 @@ namespace HealthApp.Models
 
         public int PatientId { get; set; }
         public Patient Patient { get; set; } = default!;
+
+        public int EmployeeId { get; set; }
+        public Employee Employee { get; set; } = default!;
+
     }
 
 }

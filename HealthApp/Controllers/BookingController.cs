@@ -1,7 +1,7 @@
 using HealthApp.Models;
 using HealthApp.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.EntityFrameworkCore;
 
 namespace HealthApp.Controllers;
 
@@ -14,14 +14,12 @@ public class BookingController : Controller
     {
         _bookingDbContext = bookingDbContext;
     }
-    public IActionResult Calendar()
-    {
-        List<Booking> bookings = _bookingDbContext.Bookings.ToList();
-        var bookingsViewModel = new BookingsViewModel(bookings, "Calendar");
-        // ViewBag.CurrentViewName = "Calendar";
-        return View(bookingsViewModel);
 
-        //var bookings = GetBookings();
+    public async Task<IActionResult> Calendar()
+    {
+        List<Booking> bookings = await _bookingDbContext.Bookings.ToListAsync();
+        var bookingsViewModel = new BookingsViewModel(bookings, "Calendar");
+        return View(bookingsViewModel);
     }
 
     [HttpGet]
@@ -31,27 +29,67 @@ public class BookingController : Controller
     }
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
-    public IActionResult Create(Booking booking)
+    public async Task<IActionResult> Create(Booking booking)
     {
-        if (ModelState.IsValid)
+        Console.WriteLine(booking.BookingId);
+        Console.WriteLine(booking.Date);
+        Console.WriteLine(booking.Description);
+        Console.WriteLine(booking.PatientId);
+        Console.WriteLine(booking.Patient);
+        if (!ModelState.IsValid)
         {
             _bookingDbContext.Bookings.Add(booking);
-            _bookingDbContext.SaveChanges();
+            await _bookingDbContext.SaveChangesAsync();
+            return RedirectToAction(nameof(Calendar));
+        }
+        Console.WriteLine("Return 2");
+        return View(booking);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Update(int id)
+    {
+        var booking = await _bookingDbContext.Bookings.FindAsync(id);
+        if (booking == null)
+        {
+            return NotFound();
+        }
+        return View(booking);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Update(Booking booking)
+    {
+        if (!ModelState.IsValid)
+        {
+            _bookingDbContext.Bookings.Update(booking);
+            await _bookingDbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Calendar));
         }
         return View(booking);
     }
 
-    public List<Booking> GetBookings()
+    [HttpGet]
+    public async Task<IActionResult> Delete(int id)
     {
-        var bookings = new List<Booking>();
-        var booking1 = new Booking
+        var booking = await _bookingDbContext.Bookings.FindAsync(id);
+        if (booking == null)
         {
-            BookingId = 1,
-            Date = new DateTime(2025, 1, 1, 10, 30, 0), // Year, Month, Day, Hour, Minute, Second
-        };
-        bookings.Add(booking1);
-        return bookings;
+            return NotFound();
+        }
+        return View(booking);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> DeleteConfirmed(int id)
+    {
+        var booking = await _bookingDbContext.Bookings.FindAsync(id);
+        if (booking == null)
+        {
+            return NotFound();
+        }
+        _bookingDbContext.Bookings.Remove(booking);
+        await _bookingDbContext.SaveChangesAsync();
+        return RedirectToAction(nameof(Calendar));
     }
 }
