@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\HealthApp.csproj": {}
+    "/Users/gustav/Documents/School/Webapplikasjoner(ITPE3200)/Projects/health-app/HealthApp/HealthApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\HealthApp.csproj": {
+    "/Users/gustav/Documents/School/Webapplikasjoner(ITPE3200)/Projects/health-app/HealthApp/HealthApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\HealthApp.csproj",
+        "projectUniqueName": "/Users/gustav/Documents/School/Webapplikasjoner(ITPE3200)/Projects/health-app/HealthApp/HealthApp.csproj",
         "projectName": "HealthApp",
-        "projectPath": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\HealthApp.csproj",
-        "packagesPath": "C:\\Users\\stian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\",
+        "projectPath": "/Users/gustav/Documents/School/Webapplikasjoner(ITPE3200)/Projects/health-app/HealthApp/HealthApp.csproj",
+        "packagesPath": "/Users/gustav/.nuget/packages/",
+        "outputPath": "/Users/gustav/Documents/School/Webapplikasjoner(ITPE3200)/Projects/health-app/HealthApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\stian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/gustav/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -73,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
