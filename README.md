@@ -1,2 +1,36 @@
 # health-app
 Kun lagt til scoped lifetime. Ikke transient eller singleton enda. ligger under DAL uke 5.
+
+@model BookingsViewModel
+
+<div class="container">
+    <h1>@ViewBag.CurrentViewName</h1>
+
+    <table class="table table-striped">
+        <tr>
+            <th>Id</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Patient</th>
+            <th>Employee</th>
+            <th>Actions</th>
+        </tr>
+        @foreach (var booking in Model.Bookings)
+        {
+            <tr>
+                <td>@booking.BookingId</td>
+                <td>@booking.Description</td>
+                <td>@booking.Date.ToString("")</td>
+                <td>@booking.PatientId</td>
+                <td>@booking.EmployeeId</td>
+                <td>
+                    <a asp-action="Update" asp-route-id="@booking.BookingId">Update</a>
+                    <a asp-action="Delete" asp-route-id="@booking.BookingId">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+    <p>
+        <a class="btn btn-secondary" asp-controller="Booking" asp-action="Create">Create New Booking</a>
+    </p>
+</div>

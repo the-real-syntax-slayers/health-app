@@ -1,33 +1,161 @@
 @model BookingsViewModel
+@{
+    // --- Calendar Logic ---
+    // We'll display the current month. A more advanced version might take a date from the controller.
+    var today = DateTime.Today;
+    var firstDayOfMonth = new DateTime(today.Year, today.Month, 1);
+    var daysInMonth = DateTime.DaysInMonth(today.Year, today.Month);
+
+    // DayOfWeek returns 0 for Sunday, 1 for Monday, etc.
+    int originalStartDayOffset = (int)firstDayOfMonth.DayOfWeek;
+    // Norwegian standard: Week starts on Monday (1). Sunday (0) becomes the last day (offset 6).
+    int startDayOffset = (originalStartDayOffset == 0) ? 6 : originalStartDayOffset - 1;
+
+    // Date/Time formatting (like "MMMM" and "t") depends on the server's culture.
+    // For Norwegian, it should be set to "nb-NO" or "nn-NO" globally.
+}
 
 <div class="container">
     <h1>@ViewBag.CurrentViewName</h1>
 
-    <table class="table table-striped">
-        <tr>
-            <th>Id</th>
-            <th>Description</th>
-            <th>Date</th>
-            <th>Patient</th>
-            <th>Employee</th>
-            <th>Actions</th>
-        </tr>
-        @foreach (var booking in Model.Bookings)
-        {
-            <tr>
-                <td>@booking.BookingId</td>
-                <td>@booking.Description</td>
-                <td>@booking.Date.ToString("")</td>
-                <td>@booking.PatientId</td>
-                <td>@booking.EmployeeId</td>
-                <td>
-                    <a asp-action="Update" asp-route-id="@booking.BookingId">Update</a>
-                    <a asp-action="Delete" asp-route-id="@booking.BookingId">Delete</a>
-                </td>
-            </tr>
-        }
-    </table>
     <p>
         <a class="btn btn-secondary" asp-controller="Booking" asp-action="Create">Create New Booking</a>
     </p>
+
+    <!-- Calendar Title -->
+    <h2 class="calendar-title">@firstDayOfMonth.ToString("MMMM yyyy")</h2>
+
+    <!-- Calendar Grid -->
+    <div class="calendar-grid">
+        <!-- 1. Day Headers (Norwegian Standard) -->
+        <div class="calendar-header">Man</div>
+        <div class="calendar-header">Tir</div>
+        <div class="calendar-header">Ons</div>
+        <div class="calendar-header">Tor</div>
+        <div class="calendar-header">Fre</div>
+        <div class="calendar-header">Lør</div>
+        <div class="calendar-header">Søn</div>
+
+        <!-- 2. Empty cells for padding at the start of the month -->
+        @for (int i = 0; i < startDayOffset; i++)
+        {
+            <div class="day-cell empty"></div>
+        }
+
+        <!-- 3. Day cells for each day in the month -->
+        @for (int day = 1; day <= daysInMonth; day++)
+        {
+            var currentCellDate = new DateTime(today.Year, today.Month, day);
+            var dayClass = (currentCellDate == today) ? "day-cell today" : "day-cell";
+
+            // Find bookings for this specific day. We compare .Date to ignore the time part.
+            var bookingsForThisDay = Model.Bookings.Where(b => b.Date.Date == currentCellDate.Date);
+
+            <div class="@dayClass">
+                <div class="day-number">@day</div>
+
+                <div class="bookings-container">
+                    @foreach (var booking in bookingsForThisDay)
+                    {
+                        <div class="booking-entry">
+                            <strong>@booking.Description</strong>
+                            <div class="booking-details">
+                                <!-- "t" gives the short time (e.g., 14:11 in Norway) -->
+                                @booking.Date.ToString("t") <br />
+                                P: @booking.PatientId | E: @booking.EmployeeId
+                            </div>
+                            <div class="booking-actions">
+                                <a asp-action="Update" asp-route-id="@booking.BookingId">Update</a>
+                                <a asp-action="Delete" asp-route-id="@booking.BookingId">Delete</a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
 </div>
+
+
+<style>
+    .calendar-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .calendar-grid {
+        display: grid;
+        /* 7 equal-width columns */
+        grid-template-columns: repeat(7, 1fr);
+        gap: 1px;
+        background-color: #ddd;
+        /* This creates the grid lines */
+        border: 1px solid #ddd;
+    }
+
+    .calendar-header {
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 5px;
+        background-color: #f4f4f4;
+    }
+
+    .day-cell {
+        /* Each cell will be at least 100px tall */
+        min-height: 120px;
+        padding: 8px;
+        background-color: #fff;
+        /* Use flexbox to position day number at top and bookings below */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .day-cell.empty {
+        background-color: #f9f9f9;
+    }
+
+    .day-cell.today {
+        background-color: #fffde7;
+        /* Highlight for today */
+    }
+
+    .day-cell.today .day-number {
+        font-weight: bold;
+    }
+
+    .day-number {
+        font-size: 1.1em;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .bookings-container {
+        flex-grow: 1;
+        /* Allows this container to fill the remaining space */
+        overflow-y: auto;
+        /* Adds scrollbar if many bookings */
+    }
+
+    .booking-entry {
+        background-color: #eef7ff;
+        border: 1px solid #cce5ff;
+        border-radius: 4px;
+        padding: 5px;
+        margin-top: 5px;
+        font-size: 0.85em;
+    }
+
+    .booking-details {
+        font-size: 0.9em;
+        color: #555;
+        margin: 3px 0;
+    }
+
+    .booking-actions {
+        font-size: 0.9em;
+    }
+
+    .booking-actions a {
+        margin-right: 5px;
+    }
+</style>
