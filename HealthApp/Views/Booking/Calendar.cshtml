@@ -2,21 +2,20 @@
 @{
     // --- Calendar Logic ---
 
-    // 1. Get the target month from the Controller (which defaults to today if no params)
+    // Get the target month from the Controller
     var displayMonth = (DateTime)ViewBag.CalendarDate;
-    
-    // 2. We still need the *actual* today to highlight the correct cell
+
     var today = DateTime.Today;
 
-    // 3. Base all calculations on the 'displayMonth' from the controller
+    // Base all calculations on the 'displayMonth' from the controller
     var firstDayOfMonth = displayMonth; // It's already the 1st
     var daysInMonth = DateTime.DaysInMonth(displayMonth.Year, displayMonth.Month);
 
-    // 4. Calculate day offset (your logic was already correct)
+    // Calculate day offset
     int originalStartDayOffset = (int)firstDayOfMonth.DayOfWeek;
     int startDayOffset = (originalStartDayOffset == 0) ? 6 : originalStartDayOffset - 1;
 
-    // 5. Create dates for the navigation buttons
+    // Create dates for the navigation buttons
     var prevMonth = displayMonth.AddMonths(-1);
     var nextMonth = displayMonth.AddMonths(1);
 }
@@ -30,14 +29,14 @@
 
     <!-- Calendar Title -->
     <div class="calendar-nav">
-        <a class="btn btn-outline-secondary" asp-action="Calendar" 
-           asp-route-year="@prevMonth.Year" asp-route-month="@prevMonth.Month">&laquo; Forrige</a>
-        
-        <h2 class="calendar-title">@firstDayOfMonth.ToString("MMMM yyyy")</h2>
-        
-        <a class="btn btn-outline-secondary" asp-action="Calendar" 
-           asp-route-year="@nextMonth.Year" asp-route-month="@nextMonth.Month">Neste &raquo;</a>
-    </div>
+        <a class="btn btn-outline-secondary" asp-action="Calendar" asp-route-year="@prevMonth.Year"
+            asp-route-month="@prevMonth.Month">&laquo; Forrige</a>
+
+        <h2 class="calendar-title">@firstDayOfMonth.ToString("MMMM yyyy")</h2>
+
+        <a class="btn btn-outline-secondary" asp-action="Calendar" asp-route-year="@nextMonth.Year"
+            asp-route-month="@nextMonth.Month">Neste &raquo;</a>
+    </div>
 
     <!-- Calendar Grid -->
     <div class="calendar-grid">
@@ -49,19 +48,19 @@
         <div class="calendar-header">Lør</div>
         <div class="calendar-header">Søn</div>
 
-        <!-- 2. Empty cells for padding at the start of the month -->
+        <!-- Empty cells for padding at the start of the month -->
         @for (int i = 0; i < startDayOffset; i++)
         {
             <div class="day-cell empty"></div>
         }
 
-        <!-- 3. Day cells for each day in the month -->
+        <!-- Day cells for each day in the month -->
         @for (int day = 1; day <= daysInMonth; day++)
         {
             var currentCellDate = new DateTime(displayMonth.Year, displayMonth.Month, day);
             var dayClass = (currentCellDate == today) ? "day-cell today" : "day-cell";
 
-            // Find bookings for this specific day. We compare .Date to ignore the time part.
+            // Find bookings for this specific day.
             var bookingsForThisDay = Model.Bookings.Where(b => b.Date.Date == currentCellDate.Date);
 
             <div class="@dayClass">
@@ -73,7 +72,7 @@
                         <div class="booking-entry">
                             <strong>@booking.Description</strong>
                             <div class="booking-details">
-                                <!-- "t" gives the short time (e.g., 14:11 in Norway) -->
+                                <!-- "t" gives short time -->
                                 @booking.Date.ToString("t") <br />
                                 P: @booking.PatientId | E: @booking.EmployeeId
                             </div>
@@ -91,7 +90,6 @@
 
 
 <style>
-
     .calendar-nav {
         display: flex;
         justify-content: space-around;

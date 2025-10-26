@@ -6,7 +6,7 @@ namespace HealthApp.DAL
     {
         Task<IEnumerable<Booking>?> GetAll();
         Task<Booking?> GetItemById(int id);
-        //filter metoden
+        //filter method
         Task<IEnumerable<Booking>> GetBookingsByMonthAsync(int year, int month);
         Task<bool> Create(Booking booking);
         Task<bool> Update(Booking booking);

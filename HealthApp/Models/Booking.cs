@@ -13,11 +13,13 @@ namespace HealthApp.Models
         [DataType(DataType.DateTime)]
         public DateTime Date { get; set; }
 
+        [Required]
         public int PatientId { get; set; }
 
         // navigation property
         public virtual Patient Patient { get; set; } = default!;
 
+        [Required]
         public int EmployeeId { get; set; }
 
         // navigation property

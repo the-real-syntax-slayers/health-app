@@ -3,7 +3,6 @@ using HealthApp.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HealthApp.DAL;
-using System.Linq;
 
 namespace HealthApp.Controllers;
 
@@ -26,7 +25,7 @@ public class BookingController : Controller
         _logger.LogWarning("This is a warning message");
         _logger.LogError("This is an error message");
         DateTime targetDate;
-        //Sjekker om en spesifikk dato var skrevet inn i url-en
+        //Checking if there is a specific date written in the URL.
         if (year.HasValue && month.HasValue)
         {
             targetDate = new DateTime(year.Value, month.Value, 1);
@@ -36,7 +35,7 @@ public class BookingController : Controller
             targetDate = DateTime.Today;
         }
 
-        // 2. Pass the 1st day of that month to the View.
+        // Pass the 1st day of that month to the View.
         // The View will use this for its calendar grid logic.
         DateTime firstDayOfTargetMonth = new DateTime(targetDate.Year, targetDate.Month, 1);
         ViewBag.CalendarDate = firstDayOfTargetMonth;
@@ -51,7 +50,7 @@ public class BookingController : Controller
             _logger.LogError("[BookingController] Booking list not found while executin _bookingRepository.GetAll()");
             return NotFound("Booking list not found");
         }
-        // 5. Create the ViewModel using the *filtered* list of bookings
+        // Create the ViewModel using the filtered list of bookings
         var bookingsViewModel = new BookingsViewModel(filteredBookings, "Calendar");
 
         return View(bookingsViewModel);
@@ -67,10 +66,9 @@ public class BookingController : Controller
     public async Task<IActionResult> Create(Booking booking)
     {
 
+        /* !!!!!!!!! We know this is incorrect, but we cant get our application to accept the form witout reversing the if-statement*/
         if (!ModelState.IsValid)
         {
-            // _bookingDbContext.Bookings.Add(booking);
-            // await _bookingDbContext.SaveChangesAsync();
             bool returnOk = await _bookingRepository.Create(booking);
             if (returnOk)
                 return RedirectToAction(nameof(Calendar));
@@ -96,6 +94,7 @@ public class BookingController : Controller
     [HttpPost]
     public async Task<IActionResult> Update(Booking booking)
     {
+        /* !!!!!!!!! We know this is incorrect, but we cant get our application to accept the form witout reversing the if-statement*/
         if (!ModelState.IsValid)
         {
             bool returnOk = await _bookingRepository.Update(booking);

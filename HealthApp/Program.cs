@@ -16,7 +16,7 @@ builder.Services.AddDbContext<BookingDbContext>(options =>
 builder.Services.AddScoped<IBookingRepository, BookingRepository>();
 
 var loggerConfiguration = new LoggerConfiguration()
-    .MinimumLevel.Information() // levels: Trace < Information < Warning < Erorr < Fatal
+    .MinimumLevel.Information()
     .WriteTo.File($"Logs/app_{DateTime.Now:yyyyMMdd_HHmmss}.log");
 
 loggerConfiguration.Filter.ByExcluding(e => e.Properties.TryGetValue("SourceContext", out var value)
@@ -36,9 +36,5 @@ if (app.Environment.IsDevelopment())
 app.UseStaticFiles();
 
 app.MapDefaultControllerRoute();
-
-// app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
