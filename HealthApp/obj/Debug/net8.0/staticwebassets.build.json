@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Oz5Wm174X5WbvqRwlG3wI9u4MylhuxIrS1b+ki4LDBg=",
+  "Hash": "6xH/5hsoileX4iyYAkKO4lZ/kN+sC3E7Xmz18cTBeIc=",
   "Source": "HealthApp",
   "BasePath": "_content/HealthApp",
   "Mode": "Default",
@@ -9,10 +9,10 @@
   "DiscoveryPatterns": [],
   "Assets": [
     {
-      "Identity": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HealthApp.styles.css",
+      "Identity": "C:\\Users\\adria\\Documents\\year3\\ITPE3200webapplikasjoner\\health-app\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HealthApp.styles.css",
       "SourceId": "HealthApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\adria\\Documents\\year3\\ITPE3200webapplikasjoner\\health-app\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/HealthApp",
       "RelativePath": "HealthApp.styles.css",
       "AssetKind": "All",
@@ -25,13 +25,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HealthApp.styles.css"
+      "OriginalItemSpec": "C:\\Users\\adria\\Documents\\year3\\ITPE3200webapplikasjoner\\health-app\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HealthApp.styles.css"
     },
     {
-      "Identity": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HealthApp.bundle.scp.css",
+      "Identity": "C:\\Users\\adria\\Documents\\year3\\ITPE3200webapplikasjoner\\health-app\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HealthApp.bundle.scp.css",
       "SourceId": "HealthApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\adria\\Documents\\year3\\ITPE3200webapplikasjoner\\health-app\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/HealthApp",
       "RelativePath": "HealthApp.bundle.scp.css",
       "AssetKind": "All",
@@ -44,7 +44,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\stian\\Documents\\IT\\DAVE3625\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HealthApp.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\adria\\Documents\\year3\\ITPE3200webapplikasjoner\\health-app\\health-app\\HealthApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HealthApp.bundle.scp.css"
     }
   ]
 }

@@ -23,6 +23,15 @@ namespace HealthApp.DAL
             return await _db.Bookings.FindAsync(id);
         }
 
+        // Filter her, dette er for å filtrere i databasen
+        public async Task<IEnumerable<Booking>> GetBookingsByMonthAsync(int year, int month)
+        {
+            // This 'Where' clause is translated to SQL and runs on the database.
+            return await _db.Bookings
+                .Where(b => b.Date.Year == year && b.Date.Month == month)
+                .ToListAsync();
+        }
+
         public async Task Create(Booking booking)
         {
             _db.Bookings.Add(booking);
