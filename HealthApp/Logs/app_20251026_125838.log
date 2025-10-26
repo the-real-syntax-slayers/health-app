@@ -1,0 +1,6 @@
+2025-10-26 12:58:38.454 +01:00 [INF] User profile is available. Using 'C:\Users\stian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-26 12:58:38.531 +01:00 [INF] Now listening on: http://localhost:5257
+2025-10-26 12:58:38.536 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-26 12:58:38.537 +01:00 [INF] Hosting environment: Development
+2025-10-26 12:58:38.537 +01:00 [INF] Content root path: C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp
+2025-10-26 12:59:41.585 +01:00 [INF] Application is shutting down...

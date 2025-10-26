@@ -7,20 +7,42 @@ namespace HealthApp.DAL
     public class BookingRepository : IBookingRepository
     {
         private readonly BookingDbContext _db;
+        private readonly ILogger<BookingRepository> _logger;
 
-        public BookingRepository(BookingDbContext db)
+        public BookingRepository(BookingDbContext db, ILogger<BookingRepository> logger)
         {
             _db = db;
+            _logger = logger;
         }
 
-        public async Task<IEnumerable<Booking>> GetAll()
+        public async Task<IEnumerable<Booking>?> GetAll()
         {
-            return await _db.Bookings.ToListAsync();
+            try
+            {
+                return await _db.Bookings.ToListAsync();
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("[BookingRepository] bookings ToListAsync() failed when GetAll(), error message: {e}",
+                e.Message);
+                return null;
+            }
+
         }
 
         public async Task<Booking?> GetItemById(int id)
         {
-            return await _db.Bookings.FindAsync(id);
+            try
+            {
+                return await _db.Bookings.FindAsync(id);
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("[BookingRepository] booking FindAsync(id) failed when GetItemById, for BookingId {BookingId:0000}, error message: {e}",
+                id, e.Message);
+                return null;
+            }
+
         }
 
         // Filter her, dette er for å filtrere i databasen
@@ -32,29 +54,64 @@ namespace HealthApp.DAL
                 .ToListAsync();
         }
 
-        public async Task Create(Booking booking)
+        public async Task<bool> Create(Booking booking)
         {
-            _db.Bookings.Add(booking);
-            await _db.SaveChangesAsync();
+            try
+            {
+                _db.Bookings.Add(booking);
+                await _db.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("[BookingRepository] booking creation failed for booking {@booking}, error message: {e}",
+                booking, e.Message);
+                return false;
+            }
+
         }
 
-        public async Task Update(Booking booking)
+        public async Task<bool> Update(Booking booking)
         {
-            _db.Bookings.Update(booking);
-            await _db.SaveChangesAsync();
+            try
+            {
+                _db.Bookings.Update(booking);
+                await _db.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("[BookingRepository] booking FindAsync(id) failed when updating the BookingId {BookingId:0000}, error message: {e}",
+                booking, e.Message);
+                return false;
+            }
+
         }
 
         public async Task<bool> Delete(int id)
         {
-            var booking = await _db.Bookings.FindAsync(id);
-            if (booking == null)
+            try
             {
+                var booking = await _db.Bookings.FindAsync(id);
+                if (booking == null)
+                {
+                    _logger.LogError("[BookingRepository] booking  not found for BookingId {BookingId:0000}",
+                     id);
+                    return false;
+                }
+
+                _db.Bookings.Remove(booking);
+                await _db.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("[BookingRepository] booking deletion failed found for BookingId {BookingId:0000}, error message: {e}",
+                id, e.Message);
                 return false;
             }
 
-            _db.Bookings.Remove(booking);
-            await _db.SaveChangesAsync();
-            return true;
+
         }
     }
 }

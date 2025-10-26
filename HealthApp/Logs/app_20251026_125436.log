@@ -1,0 +1,125 @@
+2025-10-26 12:54:37.206 +01:00 [INF] User profile is available. Using 'C:\Users\stian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-26 12:54:37.266 +01:00 [INF] Now listening on: http://localhost:5257
+2025-10-26 12:54:37.269 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-26 12:54:37.270 +01:00 [INF] Hosting environment: Development
+2025-10-26 12:54:37.270 +01:00 [INF] Content root path: C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp
+2025-10-26 12:54:39.515 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/ - null null
+2025-10-26 12:54:39.560 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.HomeController.Index (HealthApp)'
+2025-10-26 12:54:39.603 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HealthApp.Controllers.HomeController (HealthApp).
+2025-10-26 12:54:39.622 +01:00 [INF] Executing ViewResult, running view Index.
+2025-10-26 12:54:39.697 +01:00 [INF] Executed ViewResult - view Index executed in 74.8002ms.
+2025-10-26 12:54:39.702 +01:00 [INF] Executed action HealthApp.Controllers.HomeController.Index (HealthApp) in 97.5687ms
+2025-10-26 12:54:39.702 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.HomeController.Index (HealthApp)'
+2025-10-26 12:54:39.708 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/ - 200 null text/html; charset=utf-8 195.085ms
+2025-10-26 12:54:40.989 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar - null null
+2025-10-26 12:54:40.993 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 12:54:41.008 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 12:54:41.827 +01:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-26 12:54:41.844 +01:00 [INF] This is an information messeage
+2025-10-26 12:54:41.849 +01:00 [WRN] This is a warning message
+2025-10-26 12:54:41.850 +01:00 [ERR] This is an error message
+2025-10-26 12:54:42.260 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__year_0='?' (DbType = Int32), @__month_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."BookingId", "b"."Date", "b"."Description", "b"."EmployeeId", "b"."PatientId"
+FROM "Bookings" AS "b"
+WHERE CAST(strftime('%Y', "b"."Date") AS INTEGER) = @__year_0 AND CAST(strftime('%m', "b"."Date") AS INTEGER) = @__month_1
+2025-10-26 12:54:42.343 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-10-26 12:54:42.379 +01:00 [INF] Executed ViewResult - view Calendar executed in 37.7788ms.
+2025-10-26 12:54:42.380 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 1371.8856ms
+2025-10-26 12:54:42.380 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 12:54:42.397 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar - 200 null text/html; charset=utf-8 1409.0703ms
+2025-10-26 12:54:52.766 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-26 12:54:52.771 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 4.6372ms
+2025-10-26 12:54:52.774 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-26 12:55:10.159 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Update/7 - null null
+2025-10-26 12:55:10.161 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-10-26 12:55:10.167 +01:00 [INF] Route matched with {action = "Update", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 12:55:10.197 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-26 12:55:10.238 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."BookingId", "b"."Date", "b"."Description", "b"."EmployeeId", "b"."PatientId"
+FROM "Bookings" AS "b"
+WHERE "b"."BookingId" = @__p_0
+LIMIT 1
+2025-10-26 12:55:10.245 +01:00 [INF] Executing ViewResult, running view Update.
+2025-10-26 12:55:10.302 +01:00 [INF] Executed ViewResult - view Update executed in 58.1985ms.
+2025-10-26 12:55:10.302 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Update (HealthApp) in 135.4993ms
+2025-10-26 12:55:10.302 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-10-26 12:55:10.303 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Update/7 - 200 null text/html; charset=utf-8 143.5191ms
+2025-10-26 12:55:10.354 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-26 12:55:10.355 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 1.5606ms
+2025-10-26 12:55:10.356 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-26 12:55:17.990 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5257/Booking/Update/7 - application/x-www-form-urlencoded 322
+2025-10-26 12:55:17.990 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-10-26 12:55:18.016 +01:00 [INF] Route matched with {action = "Update", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(HealthApp.Models.Booking) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 12:55:18.171 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-26 12:55:18.405 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = DateTime), @p1='?' (Size = 4), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Bookings" SET "Date" = @p0, "Description" = @p1, "EmployeeId" = @p2, "PatientId" = @p3
+WHERE "BookingId" = @p4
+RETURNING 1;
+2025-10-26 12:55:18.419 +01:00 [INF] Executing RedirectResult, redirecting to /Booking/Calendar.
+2025-10-26 12:55:18.419 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Update (HealthApp) in 402.5752ms
+2025-10-26 12:55:18.419 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-10-26 12:55:18.420 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5257/Booking/Update/7 - 302 0 null 429.8985ms
+2025-10-26 12:55:18.431 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar - null null
+2025-10-26 12:55:18.431 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 12:55:18.432 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 12:55:18.435 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-26 12:55:18.435 +01:00 [INF] This is an information messeage
+2025-10-26 12:55:18.436 +01:00 [WRN] This is a warning message
+2025-10-26 12:55:18.437 +01:00 [ERR] This is an error message
+2025-10-26 12:55:18.442 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__year_0='?' (DbType = Int32), @__month_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."BookingId", "b"."Date", "b"."Description", "b"."EmployeeId", "b"."PatientId"
+FROM "Bookings" AS "b"
+WHERE CAST(strftime('%Y', "b"."Date") AS INTEGER) = @__year_0 AND CAST(strftime('%m', "b"."Date") AS INTEGER) = @__month_1
+2025-10-26 12:55:18.443 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-10-26 12:55:18.448 +01:00 [INF] Executed ViewResult - view Calendar executed in 5.173ms.
+2025-10-26 12:55:18.448 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 15.9585ms
+2025-10-26 12:55:18.448 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 12:55:18.448 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar - 200 null text/html; charset=utf-8 20.9579ms
+2025-10-26 12:55:18.500 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-26 12:55:18.501 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 0.5011ms
+2025-10-26 12:55:18.501 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-26 12:55:28.036 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar?year=2025&month=11 - null null
+2025-10-26 12:55:28.036 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 12:55:28.037 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 12:55:28.044 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-26 12:55:28.052 +01:00 [INF] This is an information messeage
+2025-10-26 12:55:28.053 +01:00 [WRN] This is a warning message
+2025-10-26 12:55:28.058 +01:00 [ERR] This is an error message
+2025-10-26 12:55:28.060 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__year_0='?' (DbType = Int32), @__month_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."BookingId", "b"."Date", "b"."Description", "b"."EmployeeId", "b"."PatientId"
+FROM "Bookings" AS "b"
+WHERE CAST(strftime('%Y', "b"."Date") AS INTEGER) = @__year_0 AND CAST(strftime('%m', "b"."Date") AS INTEGER) = @__month_1
+2025-10-26 12:55:28.061 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-10-26 12:55:28.063 +01:00 [INF] Executed ViewResult - view Calendar executed in 2.5646ms.
+2025-10-26 12:55:28.064 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 24.3393ms
+2025-10-26 12:55:28.064 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 12:55:28.064 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar?year=2025&month=11 - 200 null text/html; charset=utf-8 28.1939ms
+2025-10-26 12:55:28.119 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-26 12:55:28.120 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 0.4531ms
+2025-10-26 12:55:28.120 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-26 12:55:30.411 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar?year=2025&month=12 - null null
+2025-10-26 12:55:30.414 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 12:55:30.414 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 12:55:30.416 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-26 12:55:30.417 +01:00 [INF] This is an information messeage
+2025-10-26 12:55:30.419 +01:00 [WRN] This is a warning message
+2025-10-26 12:55:30.421 +01:00 [ERR] This is an error message
+2025-10-26 12:55:30.424 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__year_0='?' (DbType = Int32), @__month_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."BookingId", "b"."Date", "b"."Description", "b"."EmployeeId", "b"."PatientId"
+FROM "Bookings" AS "b"
+WHERE CAST(strftime('%Y', "b"."Date") AS INTEGER) = @__year_0 AND CAST(strftime('%m', "b"."Date") AS INTEGER) = @__month_1
+2025-10-26 12:55:30.424 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-10-26 12:55:30.426 +01:00 [INF] Executed ViewResult - view Calendar executed in 2.2209ms.
+2025-10-26 12:55:30.426 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 12.5062ms
+2025-10-26 12:55:30.427 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 12:55:30.427 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar?year=2025&month=12 - 200 null text/html; charset=utf-8 16.0726ms
+2025-10-26 12:55:30.480 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-26 12:55:30.480 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 0.4629ms
+2025-10-26 12:55:30.480 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-26 12:58:31.871 +01:00 [INF] Application is shutting down...

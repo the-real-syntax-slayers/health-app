@@ -11,14 +11,20 @@ public class BookingController : Controller
 {
 
     private readonly IBookingRepository _bookingRepository;
+    private readonly ILogger<BookingController> _logger;
 
-    public BookingController(IBookingRepository bookingRepository)
+    public BookingController(IBookingRepository bookingRepository,
+    ILogger<BookingController> logger)
     {
         _bookingRepository = bookingRepository;
+        _logger = logger;
     }
 
     public async Task<IActionResult> Calendar(int? year, int? month)
     {
+        _logger.LogInformation("This is an information messeage");
+        _logger.LogWarning("This is a warning message");
+        _logger.LogError("This is an error message");
         DateTime targetDate;
         //Sjekker om en spesifikk dato var skrevet inn i url-en
         if (year.HasValue && month.HasValue)
@@ -39,30 +45,16 @@ public class BookingController : Controller
 
         // Instead of getting ALL bookings, we get only the ones for the target month.
         var filteredBookings = await _bookingRepository.GetBookingsByMonthAsync(targetDate.Year, targetDate.Month);
-    
-        /*
-        // 3. Get ALL bookings from the repository
-        //    (This is what your code did before)
-        var allBookings = await _bookingRepository.GetAll();
 
-        // 4. Filter the bookings for ONLY the target month.
-        //    This is much more efficient than sending all bookings to the view.
-        var filteredBookings = allBookings
-            .Where(b => b.Date.Year == targetDate.Year && b.Date.Month == targetDate.Month)
-            .ToList();
-        */
+        if (filteredBookings == null)
+        {
+            _logger.LogError("[BookingController] Booking list not found while executin _bookingRepository.GetAll()");
+            return NotFound("Booking list not found");
+        }
         // 5. Create the ViewModel using the *filtered* list of bookings
         var bookingsViewModel = new BookingsViewModel(filteredBookings, "Calendar");
-        
-        return View(bookingsViewModel);
 
-
-        /*
-        // List<Booking> 
-        var bookings = await _bookingRepository.GetAll();
-        var bookingsViewModel = new BookingsViewModel(bookings, "Calendar");
         return View(bookingsViewModel);
-        */
     }
 
     [HttpGet]
@@ -74,19 +66,17 @@ public class BookingController : Controller
     [HttpPost]
     public async Task<IActionResult> Create(Booking booking)
     {
-        Console.WriteLine(booking.BookingId);
-        Console.WriteLine(booking.Date);
-        Console.WriteLine(booking.Description);
-        Console.WriteLine(booking.PatientId);
-        Console.WriteLine(booking.Patient);
+
         if (!ModelState.IsValid)
         {
             // _bookingDbContext.Bookings.Add(booking);
             // await _bookingDbContext.SaveChangesAsync();
-            await _bookingRepository.Create(booking);
-            return RedirectToAction(nameof(Calendar));
+            bool returnOk = await _bookingRepository.Create(booking);
+            if (returnOk)
+                return RedirectToAction(nameof(Calendar));
+
         }
-        Console.WriteLine("Return 2");
+        _logger.LogWarning("[BookingController] Booking creation failed {@booking}", booking);
         return View(booking);
     }
 
@@ -96,7 +86,9 @@ public class BookingController : Controller
         var booking = await _bookingRepository.GetItemById(id);
         if (booking == null)
         {
-            return NotFound();
+            _logger.LogError("[BookingController] Booking not found when updating the BookingId {BookingId:0000}",
+            id);
+            return BadRequest("Booking not found for the BookingId");
         }
         return View(booking);
     }
@@ -106,9 +98,11 @@ public class BookingController : Controller
     {
         if (!ModelState.IsValid)
         {
-            await _bookingRepository.Update(booking);
-            return RedirectToAction(nameof(Calendar));
+            bool returnOk = await _bookingRepository.Update(booking);
+            if (returnOk)
+                return RedirectToAction(nameof(Calendar));
         }
+        _logger.LogWarning("[BookingController] Booking update failed {@booking}", booking);
         return View(booking);
     }
 
@@ -118,7 +112,9 @@ public class BookingController : Controller
         var booking = await _bookingRepository.GetItemById(id);
         if (booking == null)
         {
-            return NotFound();
+            _logger.LogError("[BookingController] Booking not found for the BookingId {BookingId:0000}",
+            id);
+            return BadRequest("Booking not found for the BookingId");
         }
         return View(booking);
     }
@@ -126,7 +122,13 @@ public class BookingController : Controller
     [HttpPost]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
-        var booking = await _bookingRepository.Delete(id);
+        bool returnOk = await _bookingRepository.Delete(id);
+        if (!returnOk)
+        {
+            _logger.LogError("[BookingController] Booking deletion failed for the BookingId {BookingId:0000}",
+            id);
+            return BadRequest("Booking deletion failed");
+        }
         return RedirectToAction(nameof(Calendar));
     }
 }
