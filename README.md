@@ -40,3 +40,4 @@ The goal of this project is to build a **Minimum Viable Product (MVP)** that dem
     dotnet restore
     dotnet ef database update
     dotnet run
+4. IMPORTANT!! When creating a booking you must use patientId 1 and employeeId 1, because these two already exist in the database.
