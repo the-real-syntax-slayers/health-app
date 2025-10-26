@@ -7,8 +7,10 @@ namespace HealthApp.Models
     {
         public int BookingId { get; set; }
 
+        [StringLength(200)]
         public string? Description { get; set; }
 
+        [DataType(DataType.DateTime)]
         public DateTime Date { get; set; }
 
         public int PatientId { get; set; }

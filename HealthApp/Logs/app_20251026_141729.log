@@ -1,0 +1,391 @@
+2025-10-26 14:17:29.899 +01:00 [INF] User profile is available. Using 'C:\Users\stian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-26 14:17:29.965 +01:00 [INF] Now listening on: http://localhost:5257
+2025-10-26 14:17:29.969 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-26 14:17:29.970 +01:00 [INF] Hosting environment: Development
+2025-10-26 14:17:29.970 +01:00 [INF] Content root path: C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp
+2025-10-26 14:17:41.213 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/ - null null
+2025-10-26 14:17:41.251 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.HomeController.Index (HealthApp)'
+2025-10-26 14:17:41.291 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HealthApp.Controllers.HomeController (HealthApp).
+2025-10-26 14:17:41.311 +01:00 [INF] Executing ViewResult, running view Index.
+2025-10-26 14:17:41.386 +01:00 [INF] Executed ViewResult - view Index executed in 79.0962ms.
+2025-10-26 14:17:41.394 +01:00 [INF] Executed action HealthApp.Controllers.HomeController.Index (HealthApp) in 102.0029ms
+2025-10-26 14:17:41.394 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.HomeController.Index (HealthApp)'
+2025-10-26 14:17:41.398 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/ - 200 null text/html; charset=utf-8 188.7952ms
+2025-10-26 14:17:41.462 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:17:41.462 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:17:41.467 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 5.4348ms
+2025-10-26 14:17:41.467 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 5.4325ms
+2025-10-26 14:17:41.469 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:17:41.469 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:17:43.153 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar - null null
+2025-10-26 14:17:43.155 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 14:17:43.172 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:17:44.018 +01:00 [INF] This is an information messeage
+2025-10-26 14:17:44.027 +01:00 [WRN] This is a warning message
+2025-10-26 14:17:44.032 +01:00 [ERR] This is an error message
+2025-10-26 14:17:44.524 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-10-26 14:17:44.560 +01:00 [INF] Executed ViewResult - view Calendar executed in 36.6655ms.
+2025-10-26 14:17:44.560 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 1387.471ms
+2025-10-26 14:17:44.560 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 14:17:44.576 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar - 200 null text/html; charset=utf-8 1423.711ms
+2025-10-26 14:17:44.604 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:17:44.604 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:17:44.605 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 0.7143ms
+2025-10-26 14:17:44.605 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.8767ms
+2025-10-26 14:17:44.605 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:17:44.605 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:17:48.010 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Create - null null
+2025-10-26 14:17:48.013 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:17:48.020 +01:00 [INF] Route matched with {action = "Create", controller = "Booking"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:17:48.057 +01:00 [INF] Executing ViewResult, running view Create.
+2025-10-26 14:17:48.139 +01:00 [INF] Executed ViewResult - view Create executed in 82.9116ms.
+2025-10-26 14:17:48.139 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Create (HealthApp) in 118.5414ms
+2025-10-26 14:17:48.139 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:17:48.139 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Create - 200 null text/html; charset=utf-8 128.6298ms
+2025-10-26 14:17:48.186 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:17:48.187 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.8427ms
+2025-10-26 14:17:48.187 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:17:48.188 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:17:48.188 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 0.7259ms
+2025-10-26 14:17:48.189 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:18:02.816 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5257/Booking/Create - application/x-www-form-urlencoded 294
+2025-10-26 14:18:02.817 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:18:02.848 +01:00 [INF] Route matched with {action = "Create", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HealthApp.Models.Booking) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:18:03.161 +01:00 [INF] Executing RedirectResult, redirecting to /Booking/Calendar.
+2025-10-26 14:18:03.161 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Create (HealthApp) in 313.5523ms
+2025-10-26 14:18:03.162 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:18:03.162 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5257/Booking/Create - 302 0 null 345.5848ms
+2025-10-26 14:18:03.168 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar - null null
+2025-10-26 14:18:03.169 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 14:18:03.169 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:18:03.174 +01:00 [INF] This is an information messeage
+2025-10-26 14:18:03.175 +01:00 [WRN] This is a warning message
+2025-10-26 14:18:03.176 +01:00 [ERR] This is an error message
+2025-10-26 14:18:03.183 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-10-26 14:18:03.187 +01:00 [INF] Executed ViewResult - view Calendar executed in 3.826ms.
+2025-10-26 14:18:03.187 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 17.6646ms
+2025-10-26 14:18:03.187 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 14:18:03.187 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar - 200 null text/html; charset=utf-8 18.9772ms
+2025-10-26 14:18:03.249 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:18:03.250 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.7319ms
+2025-10-26 14:18:03.250 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:18:03.251 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:18:03.251 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 0.5353ms
+2025-10-26 14:18:03.251 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:18:17.864 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Create - null null
+2025-10-26 14:18:17.864 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:18:17.864 +01:00 [INF] Route matched with {action = "Create", controller = "Booking"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:18:17.868 +01:00 [INF] Executing ViewResult, running view Create.
+2025-10-26 14:18:17.879 +01:00 [INF] Executed ViewResult - view Create executed in 11.8084ms.
+2025-10-26 14:18:17.880 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Create (HealthApp) in 15.0395ms
+2025-10-26 14:18:17.880 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:18:17.880 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Create - 200 null text/html; charset=utf-8 15.7376ms
+2025-10-26 14:18:17.935 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:18:17.936 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.7072ms
+2025-10-26 14:18:17.936 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:18:17.936 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:18:17.937 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 0.3951ms
+2025-10-26 14:18:17.937 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:18:22.678 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5257/Booking/Create - application/x-www-form-urlencoded 292
+2025-10-26 14:18:22.679 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:18:22.679 +01:00 [INF] Route matched with {action = "Create", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HealthApp.Models.Booking) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:18:22.699 +01:00 [INF] Executing RedirectResult, redirecting to /Booking/Calendar.
+2025-10-26 14:18:22.700 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Create (HealthApp) in 20.5772ms
+2025-10-26 14:18:22.700 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:18:22.700 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5257/Booking/Create - 302 0 null 22.065ms
+2025-10-26 14:18:22.710 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar - null null
+2025-10-26 14:18:22.710 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 14:18:22.710 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:18:22.715 +01:00 [INF] This is an information messeage
+2025-10-26 14:18:22.716 +01:00 [WRN] This is a warning message
+2025-10-26 14:18:22.717 +01:00 [ERR] This is an error message
+2025-10-26 14:18:22.721 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-10-26 14:18:22.725 +01:00 [INF] Executed ViewResult - view Calendar executed in 4.4573ms.
+2025-10-26 14:18:22.725 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 15.0655ms
+2025-10-26 14:18:22.726 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 14:18:22.726 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar - 200 null text/html; charset=utf-8 16.2321ms
+2025-10-26 14:18:22.781 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:18:22.782 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.9997ms
+2025-10-26 14:18:22.782 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:18:22.783 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:18:22.785 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 1.4642ms
+2025-10-26 14:18:22.785 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:19:04.919 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar - null null
+2025-10-26 14:19:04.919 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 14:19:04.919 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:19:04.927 +01:00 [INF] This is an information messeage
+2025-10-26 14:19:04.933 +01:00 [WRN] This is a warning message
+2025-10-26 14:19:04.934 +01:00 [ERR] This is an error message
+2025-10-26 14:19:04.936 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-10-26 14:19:04.946 +01:00 [INF] Executed ViewResult - view Calendar executed in 9.9063ms.
+2025-10-26 14:19:04.947 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 27.0472ms
+2025-10-26 14:19:04.947 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 14:19:04.950 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar - 200 null text/html; charset=utf-8 30.785ms
+2025-10-26 14:19:04.981 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:19:04.981 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:19:04.982 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.5136ms
+2025-10-26 14:19:04.982 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 0.5151ms
+2025-10-26 14:19:04.982 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:19:04.982 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:19:11.460 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Create - null null
+2025-10-26 14:19:11.460 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:19:11.461 +01:00 [INF] Route matched with {action = "Create", controller = "Booking"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:19:11.464 +01:00 [INF] Executing ViewResult, running view Create.
+2025-10-26 14:19:11.471 +01:00 [INF] Executed ViewResult - view Create executed in 6.6827ms.
+2025-10-26 14:19:11.471 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Create (HealthApp) in 10.3838ms
+2025-10-26 14:19:11.471 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:19:11.471 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Create - 200 null text/html; charset=utf-8 11.0771ms
+2025-10-26 14:19:11.530 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:19:11.533 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 2.0099ms
+2025-10-26 14:19:11.533 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:19:11.537 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:19:11.537 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 0.5252ms
+2025-10-26 14:19:11.537 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:19:28.217 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5257/Booking/Create - application/x-www-form-urlencoded 512
+2025-10-26 14:19:28.217 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:19:28.217 +01:00 [INF] Route matched with {action = "Create", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HealthApp.Models.Booking) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:19:28.233 +01:00 [INF] Executing RedirectResult, redirecting to /Booking/Calendar.
+2025-10-26 14:19:28.233 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Create (HealthApp) in 16.0602ms
+2025-10-26 14:19:28.233 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:19:28.234 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5257/Booking/Create - 302 0 null 17.1895ms
+2025-10-26 14:19:28.243 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar - null null
+2025-10-26 14:19:28.245 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 14:19:28.245 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:19:28.263 +01:00 [INF] This is an information messeage
+2025-10-26 14:19:28.265 +01:00 [WRN] This is a warning message
+2025-10-26 14:19:28.266 +01:00 [ERR] This is an error message
+2025-10-26 14:19:28.276 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-10-26 14:19:28.277 +01:00 [INF] Executed ViewResult - view Calendar executed in 1.6625ms.
+2025-10-26 14:19:28.278 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 32.5403ms
+2025-10-26 14:19:28.278 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 14:19:28.278 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar - 200 null text/html; charset=utf-8 34.5324ms
+2025-10-26 14:19:28.343 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:19:28.344 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.8238ms
+2025-10-26 14:19:28.344 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:19:28.345 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:19:28.345 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 0.4914ms
+2025-10-26 14:19:28.345 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:19:33.550 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Update/18 - null null
+2025-10-26 14:19:33.550 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-10-26 14:19:33.560 +01:00 [INF] Route matched with {action = "Update", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:19:33.633 +01:00 [INF] Executing ViewResult, running view Update.
+2025-10-26 14:19:33.651 +01:00 [INF] Executed ViewResult - view Update executed in 22.3112ms.
+2025-10-26 14:19:33.652 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Update (HealthApp) in 91.7194ms
+2025-10-26 14:19:33.652 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-10-26 14:19:33.652 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Update/18 - 200 null text/html; charset=utf-8 101.6529ms
+2025-10-26 14:19:33.702 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:19:33.702 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.458ms
+2025-10-26 14:19:33.702 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:19:33.704 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:19:33.705 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 1.2846ms
+2025-10-26 14:19:33.705 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:19:39.170 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5257/Booking/Update/18 - application/x-www-form-urlencoded 525
+2025-10-26 14:19:39.170 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-10-26 14:19:39.180 +01:00 [INF] Route matched with {action = "Update", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(HealthApp.Models.Booking) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:19:39.205 +01:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = DateTime), @p1='?' (Size = 200), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Bookings" SET "Date" = @p0, "Description" = @p1, "EmployeeId" = @p2, "PatientId" = @p3
+WHERE "BookingId" = @p4
+RETURNING 1;
+2025-10-26 14:19:39.251 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'HealthApp.DAL.BookingDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-10-26 14:19:39.254 +01:00 [ERR] [BookingRepository] booking FindAsync(id) failed when updating the BookingId HealthApp.Models.Booking, error message: An error occurred while saving the entity changes. See the inner exception for details.
+2025-10-26 14:19:39.257 +01:00 [WRN] [BookingController] Booking update failed {"BookingId":18,"Description":"Developing a homecare appointment management web app requires combining usability, accessibility, and reliability to support healthcare personnel and elderly clients in efficiently scheduling, viewing","Date":"2025-10-11T11:30:00.0000000","PatientId":2,"Patient":null,"EmployeeId":1,"Employee":null,"$type":"Booking"}
+2025-10-26 14:19:39.258 +01:00 [INF] Executing ViewResult, running view Update.
+2025-10-26 14:19:39.265 +01:00 [INF] Executed ViewResult - view Update executed in 7.2141ms.
+2025-10-26 14:19:39.265 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Update (HealthApp) in 85.4783ms
+2025-10-26 14:19:39.265 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-10-26 14:19:39.266 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5257/Booking/Update/18 - 200 null text/html; charset=utf-8 95.9871ms
+2025-10-26 14:19:39.308 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:19:39.309 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.6531ms
+2025-10-26 14:19:39.309 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:19:39.313 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:19:39.314 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 1.4893ms
+2025-10-26 14:19:39.314 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:19:53.525 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5257/Booking/Update/18 - application/x-www-form-urlencoded 525
+2025-10-26 14:19:53.525 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-10-26 14:19:53.526 +01:00 [INF] Route matched with {action = "Update", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(HealthApp.Models.Booking) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:19:53.538 +01:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = DateTime), @p1='?' (Size = 200), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Bookings" SET "Date" = @p0, "Description" = @p1, "EmployeeId" = @p2, "PatientId" = @p3
+WHERE "BookingId" = @p4
+RETURNING 1;
+2025-10-26 14:19:53.559 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'HealthApp.DAL.BookingDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-10-26 14:19:53.560 +01:00 [ERR] [BookingRepository] booking FindAsync(id) failed when updating the BookingId HealthApp.Models.Booking, error message: An error occurred while saving the entity changes. See the inner exception for details.
+2025-10-26 14:19:53.562 +01:00 [WRN] [BookingController] Booking update failed {"BookingId":18,"Description":"Developing a homecare appointment management web app requires combining usability, accessibility, and reliability to support healthcare personnel and elderly clients in efficiently scheduling, viewing","Date":"2025-10-11T11:30:00.0000000","PatientId":1,"Patient":null,"EmployeeId":2,"Employee":null,"$type":"Booking"}
+2025-10-26 14:19:53.562 +01:00 [INF] Executing ViewResult, running view Update.
+2025-10-26 14:19:53.564 +01:00 [INF] Executed ViewResult - view Update executed in 1.5939ms.
+2025-10-26 14:19:53.564 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Update (HealthApp) in 37.9734ms
+2025-10-26 14:19:53.564 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-10-26 14:19:53.564 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5257/Booking/Update/18 - 200 null text/html; charset=utf-8 39.1342ms
+2025-10-26 14:19:53.603 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:19:53.604 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.5286ms
+2025-10-26 14:19:53.604 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:19:53.605 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:19:53.605 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 0.3742ms
+2025-10-26 14:19:53.605 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:20:10.327 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5257/Booking/Update/18 - application/x-www-form-urlencoded 525
+2025-10-26 14:20:10.327 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-10-26 14:20:10.328 +01:00 [INF] Route matched with {action = "Update", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(HealthApp.Models.Booking) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:20:10.350 +01:00 [INF] Executing RedirectResult, redirecting to /Booking/Calendar.
+2025-10-26 14:20:10.350 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Update (HealthApp) in 22.1548ms
+2025-10-26 14:20:10.350 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-10-26 14:20:10.350 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5257/Booking/Update/18 - 302 0 null 23.7327ms
+2025-10-26 14:20:10.363 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar - null null
+2025-10-26 14:20:10.364 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 14:20:10.364 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:20:10.367 +01:00 [INF] This is an information messeage
+2025-10-26 14:20:10.371 +01:00 [WRN] This is a warning message
+2025-10-26 14:20:10.372 +01:00 [ERR] This is an error message
+2025-10-26 14:20:10.374 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-10-26 14:20:10.376 +01:00 [INF] Executed ViewResult - view Calendar executed in 2.423ms.
+2025-10-26 14:20:10.377 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 12.6982ms
+2025-10-26 14:20:10.377 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-10-26 14:20:10.377 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar - 200 null text/html; charset=utf-8 13.4678ms
+2025-10-26 14:20:10.427 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:20:10.427 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.6362ms
+2025-10-26 14:20:10.428 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:20:10.429 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:20:10.429 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 0.374ms
+2025-10-26 14:20:10.429 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:20:46.494 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Create - null null
+2025-10-26 14:20:46.495 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:20:46.495 +01:00 [INF] Route matched with {action = "Create", controller = "Booking"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:20:46.497 +01:00 [INF] Executing ViewResult, running view Create.
+2025-10-26 14:20:46.500 +01:00 [INF] Executed ViewResult - view Create executed in 2.5627ms.
+2025-10-26 14:20:46.500 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Create (HealthApp) in 5.0309ms
+2025-10-26 14:20:46.500 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:20:46.500 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Create - 200 null text/html; charset=utf-8 5.6196ms
+2025-10-26 14:20:46.541 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:20:46.542 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 0.5432ms
+2025-10-26 14:20:46.542 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:20:46.543 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:20:46.543 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.3153ms
+2025-10-26 14:20:46.543 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:21:02.447 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5257/Booking/Create - application/x-www-form-urlencoded 315
+2025-10-26 14:21:02.448 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:21:02.448 +01:00 [INF] Route matched with {action = "Create", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HealthApp.Models.Booking) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-10-26 14:21:02.456 +01:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 9), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Bookings" ("Date", "Description", "EmployeeId", "PatientId")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "BookingId";
+2025-10-26 14:21:02.475 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'HealthApp.DAL.BookingDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-10-26 14:21:02.485 +01:00 [ERR] [BookingRepository] booking creation failed for booking {"BookingId":0,"Description":"132555132","Date":"2025-10-29T14:20:00.0000000","PatientId":2,"Patient":null,"EmployeeId":2,"Employee":null,"$type":"Booking"}, error message: An error occurred while saving the entity changes. See the inner exception for details.
+2025-10-26 14:21:02.487 +01:00 [WRN] [BookingController] Booking creation failed {"BookingId":0,"Description":"132555132","Date":"2025-10-29T14:20:00.0000000","PatientId":2,"Patient":null,"EmployeeId":2,"Employee":null,"$type":"Booking"}
+2025-10-26 14:21:02.487 +01:00 [INF] Executing ViewResult, running view Create.
+2025-10-26 14:21:02.500 +01:00 [INF] Executed ViewResult - view Create executed in 13.4149ms.
+2025-10-26 14:21:02.501 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Create (HealthApp) in 52.325ms
+2025-10-26 14:21:02.501 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Create (HealthApp)'
+2025-10-26 14:21:02.501 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5257/Booking/Create - 200 null text/html; charset=utf-8 54.8965ms
+2025-10-26 14:21:02.548 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-10-26 14:21:02.549 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 1.1304ms
+2025-10-26 14:21:02.549 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-10-26 14:21:02.550 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-10-26 14:21:02.551 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 0.5141ms
+2025-10-26 14:21:02.551 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-10-26 14:21:22.152 +01:00 [INF] Application is shutting down...
