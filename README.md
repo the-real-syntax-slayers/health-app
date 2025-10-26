@@ -1,36 +1,42 @@
-# health-app
-Kun lagt til scoped lifetime. Ikke transient eller singleton enda. ligger under DAL uke 5.
+# Homecare Appointment Management Tool
 
-@model BookingsViewModel
+## Overview
+This project is a **web-based homecare appointment management tool** developed as part of the **Mandatory Assignment: Basic Project for ITPE3200 Web Applications (Fall 2025)**.  
+The system enables healthcare personnel and elderly clients to manage homecare appointments efficiently through a modern web interface built with **.NET Core 8.0 MVC**.
 
-<div class="container">
-    <h1>@ViewBag.CurrentViewName</h1>
+---
 
-    <table class="table table-striped">
-        <tr>
-            <th>Id</th>
-            <th>Description</th>
-            <th>Date</th>
-            <th>Patient</th>
-            <th>Employee</th>
-            <th>Actions</th>
-        </tr>
-        @foreach (var booking in Model.Bookings)
-        {
-            <tr>
-                <td>@booking.BookingId</td>
-                <td>@booking.Description</td>
-                <td>@booking.Date.ToString("")</td>
-                <td>@booking.PatientId</td>
-                <td>@booking.EmployeeId</td>
-                <td>
-                    <a asp-action="Update" asp-route-id="@booking.BookingId">Update</a>
-                    <a asp-action="Delete" asp-route-id="@booking.BookingId">Delete</a>
-                </td>
-            </tr>
-        }
-    </table>
-    <p>
-        <a class="btn btn-secondary" asp-controller="Booking" asp-action="Create">Create New Booking</a>
-    </p>
-</div>
+## Project Description
+The goal of this project is to build a **Minimum Viable Product (MVP)** that demonstrates the core functionality of a homecare scheduling system. The application simplifies communication and coordination between healthcare personnel and older adults receiving homecare.
+
+### Main Features
+- **Booking Management:**  
+  You can create, view, update, and delete bookings.
+
+---
+
+## Technologies Used
+- **Backend:** .NET Core 8.0 (MVC Framework)
+- **Frontend:** Razor Views, HTML, CSS, Bootstrap
+- **Database:** Entity Framework Core with SQLite
+- **Design Pattern:** Repository Pattern and Data Access Layer (DAL)
+- **Asynchronous Operations:** Implemented for all database interactions
+- **Validation:** Server-side form validation
+- **Logging & Error Handling:** Implemented throughout the backend
+---
+
+## Setup Instructions
+
+### Prerequisites
+- **.NET SDK 8.0**
+- **Node.js (version 20.x or newer)**
+- **SQLite** (or another supported provider)
+
+### How to Run
+1. Clone the project repository.
+2. Open the project in **Visual Studio Code** or **Visual Studio**.
+3. Run the following command to restore dependencies:
+   ```bash
+    dotnet restore
+    dotnet ef database update
+    dotnet run
