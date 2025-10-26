@@ -9,43 +9,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HealthApp
 build_property.RootNamespace = HealthApp
-build_property.ProjectDir = C:\Users\adria\Documents\year3\ITPE3200webapplikasjoner\health-app\health-app\HealthApp\
+build_property.ProjectDir = C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\adria\Documents\year3\ITPE3200webapplikasjoner\health-app\health-app\HealthApp
+build_property.MSBuildProjectDirectory = C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/adria/Documents/year3/ITPE3200webapplikasjoner/health-app/health-app/HealthApp/Views/Booking/Calendar.cshtml]
+[C:/Users/stian/Documents/IT/DAVE3625/health-app/HealthApp/Views/Booking/Calendar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xDYWxlbmRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/Documents/year3/ITPE3200webapplikasjoner/health-app/health-app/HealthApp/Views/Booking/Create.cshtml]
+[C:/Users/stian/Documents/IT/DAVE3625/health-app/HealthApp/Views/Booking/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/Documents/year3/ITPE3200webapplikasjoner/health-app/health-app/HealthApp/Views/Booking/Delete.cshtml]
+[C:/Users/stian/Documents/IT/DAVE3625/health-app/HealthApp/Views/Booking/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/Documents/year3/ITPE3200webapplikasjoner/health-app/health-app/HealthApp/Views/Booking/Update.cshtml]
+[C:/Users/stian/Documents/IT/DAVE3625/health-app/HealthApp/Views/Booking/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/Documents/year3/ITPE3200webapplikasjoner/health-app/health-app/HealthApp/Views/Home/index.cshtml]
+[C:/Users/stian/Documents/IT/DAVE3625/health-app/HealthApp/Views/Home/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/Documents/year3/ITPE3200webapplikasjoner/health-app/health-app/HealthApp/Views/_ViewImports.cshtml]
+[C:/Users/stian/Documents/IT/DAVE3625/health-app/HealthApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/Documents/year3/ITPE3200webapplikasjoner/health-app/health-app/HealthApp/Views/_ViewStart.cshtml]
+[C:/Users/stian/Documents/IT/DAVE3625/health-app/HealthApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adria/Documents/year3/ITPE3200webapplikasjoner/health-app/health-app/HealthApp/Views/Shared/_Layout.cshtml]
+[C:/Users/stian/Documents/IT/DAVE3625/health-app/HealthApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-si3pds6s3y
