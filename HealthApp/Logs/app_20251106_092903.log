@@ -1,0 +1,23 @@
+2025-11-06 09:29:03.610 +01:00 [INF] User profile is available. Using 'C:\Users\stian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-06 09:29:03.901 +01:00 [INF] Now listening on: https://localhost:7088
+2025-11-06 09:29:03.907 +01:00 [INF] Now listening on: http://localhost:5257
+2025-11-06 09:29:03.914 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-06 09:29:03.925 +01:00 [INF] Hosting environment: Development
+2025-11-06 09:29:03.930 +01:00 [INF] Content root path: C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp
+2025-11-06 09:29:04.416 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar - null null
+2025-11-06 09:29:04.467 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-11-06 09:29:04.517 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-11-06 09:29:05.882 +01:00 [INF] This is an information messeage
+2025-11-06 09:29:05.890 +01:00 [WRN] This is a warning message
+2025-11-06 09:29:05.893 +01:00 [ERR] This is an error message
+2025-11-06 09:29:06.584 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-11-06 09:29:06.706 +01:00 [INF] Executed ViewResult - view Calendar executed in 128.5636ms.
+2025-11-06 09:29:06.710 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 2192.3129ms
+2025-11-06 09:29:06.713 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-11-06 09:29:06.746 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar - 200 null text/html; charset=utf-8 2332.3723ms
+2025-11-06 09:29:06.801 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-11-06 09:29:06.804 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-11-06 09:29:06.806 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 5.2042ms
+2025-11-06 09:29:06.806 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 2.8625ms
+2025-11-06 09:29:06.809 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-11-06 09:29:06.810 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
