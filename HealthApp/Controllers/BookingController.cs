@@ -3,6 +3,7 @@ using HealthApp.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HealthApp.DAL;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HealthApp.Controllers;
 
@@ -57,12 +58,14 @@ public class BookingController : Controller
     }
 
     [HttpGet]
+    [Authorize]
     public IActionResult Create()
     {
         return View();
     }
 
     [HttpPost]
+    [Authorize]
     public async Task<IActionResult> Create(Booking booking)
     {
 
@@ -79,6 +82,7 @@ public class BookingController : Controller
     }
 
     [HttpGet]
+    [Authorize]
     public async Task<IActionResult> Update(int id)
     {
         var booking = await _bookingRepository.GetItemById(id);
@@ -92,6 +96,7 @@ public class BookingController : Controller
     }
 
     [HttpPost]
+    [Authorize]
     public async Task<IActionResult> Update(Booking booking)
     {
         /* !!!!!!!!! We know this is incorrect, but we cant get our application to accept the form witout reversing the if-statement*/
@@ -106,6 +111,7 @@ public class BookingController : Controller
     }
 
     [HttpGet]
+    [Authorize]
     public async Task<IActionResult> Delete(int id)
     {
         var booking = await _bookingRepository.GetItemById(id);
@@ -119,6 +125,7 @@ public class BookingController : Controller
     }
 
     [HttpPost]
+    [Authorize]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
         bool returnOk = await _bookingRepository.Delete(id);

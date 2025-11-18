@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using HealthApp.Models;
 
 namespace HealthApp.DAL;
 
-public class BookingDbContext : DbContext
+public class BookingDbContext : IdentityDbContext
 {
     public BookingDbContext(DbContextOptions<BookingDbContext> options) : base(options)
     {

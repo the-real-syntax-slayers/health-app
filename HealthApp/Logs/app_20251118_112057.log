@@ -1,0 +1,195 @@
+2025-11-18 11:20:57.628 +01:00 [INF] User profile is available. Using 'C:\Users\stian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-18 11:20:57.779 +01:00 [INF] Now listening on: http://localhost:5257
+2025-11-18 11:20:57.783 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-18 11:20:57.784 +01:00 [INF] Hosting environment: Development
+2025-11-18 11:20:57.784 +01:00 [INF] Content root path: C:\Users\stian\Documents\IT\DAVE3625\health-app\HealthApp
+2025-11-18 11:21:10.549 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/ - null null
+2025-11-18 11:21:10.624 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.HomeController.Index (HealthApp)'
+2025-11-18 11:21:10.660 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HealthApp.Controllers.HomeController (HealthApp).
+2025-11-18 11:21:10.673 +01:00 [INF] Executing ViewResult, running view Index.
+2025-11-18 11:21:11.981 +01:00 [INF] Executed ViewResult - view Index executed in 1309.9263ms.
+2025-11-18 11:21:11.986 +01:00 [INF] Executed action HealthApp.Controllers.HomeController.Index (HealthApp) in 1324.8663ms
+2025-11-18 11:21:11.986 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.HomeController.Index (HealthApp)'
+2025-11-18 11:21:12.003 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/ - 200 null text/html; charset=utf-8 1458.1074ms
+2025-11-18 11:21:12.012 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-11-18 11:21:12.012 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-11-18 11:21:12.022 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 10.1259ms
+2025-11-18 11:21:12.022 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 10.1566ms
+2025-11-18 11:21:12.024 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-11-18 11:21:12.024 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-11-18 11:21:15.218 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Identity/Account/Login - null null
+2025-11-18 11:21:15.225 +01:00 [INF] Executing endpoint '/Account/Login'
+2025-11-18 11:21:15.274 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-11-18 11:21:15.331 +01:00 [INF] Executing handler method HealthApp.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-11-18 11:21:15.339 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-11-18 11:21:15.342 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-11-18 11:21:15.347 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-11-18 11:21:15.347 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-11-18 11:21:15.443 +01:00 [INF] Executed page /Account/Login in 168.5587ms
+2025-11-18 11:21:15.443 +01:00 [INF] Executed endpoint '/Account/Login'
+2025-11-18 11:21:15.444 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Identity/Account/Login - 200 null text/html; charset=utf-8 225.242ms
+2025-11-18 11:21:15.494 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-11-18 11:21:15.496 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 1.5549ms
+2025-11-18 11:21:15.496 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-11-18 11:21:15.496 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-11-18 11:21:15.498 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 1.5231ms
+2025-11-18 11:21:15.498 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-11-18 11:21:15.499 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2025-11-18 11:21:15.499 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2025-11-18 11:21:15.500 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 404 0 null 1.0697ms
+2025-11-18 11:21:15.500 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js, Response status code: 404
+2025-11-18 11:21:15.501 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation/dist/jquery.validate.min.js - 404 0 null 1.769ms
+2025-11-18 11:21:15.501 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation/dist/jquery.validate.min.js, Response status code: 404
+2025-11-18 11:21:16.738 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5257/Identity/Account/Login - application/x-www-form-urlencoded 270
+2025-11-18 11:21:16.748 +01:00 [INF] Executing endpoint '/Account/Login'
+2025-11-18 11:21:16.749 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-11-18 11:21:16.925 +01:00 [INF] Executing handler method HealthApp.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2025-11-18 11:21:17.689 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-11-18 11:21:17.689 +01:00 [INF] User logged in.
+2025-11-18 11:21:17.690 +01:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-11-18 11:21:17.691 +01:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2025-11-18 11:21:17.692 +01:00 [INF] Executed page /Account/Login in 942.4441ms
+2025-11-18 11:21:17.692 +01:00 [INF] Executed endpoint '/Account/Login'
+2025-11-18 11:21:17.704 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5257/Identity/Account/Login - 302 0 null 966.53ms
+2025-11-18 11:21:17.705 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/ - null null
+2025-11-18 11:21:17.717 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.HomeController.Index (HealthApp)'
+2025-11-18 11:21:17.718 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HealthApp.Controllers.HomeController (HealthApp).
+2025-11-18 11:21:17.718 +01:00 [INF] Executing ViewResult, running view Index.
+2025-11-18 11:21:17.724 +01:00 [INF] Executed ViewResult - view Index executed in 5.5321ms.
+2025-11-18 11:21:17.724 +01:00 [INF] Executed action HealthApp.Controllers.HomeController.Index (HealthApp) in 6.1544ms
+2025-11-18 11:21:17.724 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.HomeController.Index (HealthApp)'
+2025-11-18 11:21:17.724 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/ - 200 null text/html; charset=utf-8 19.4746ms
+2025-11-18 11:21:17.781 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-11-18 11:21:17.788 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 6.4538ms
+2025-11-18 11:21:17.788 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-11-18 11:21:17.788 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-11-18 11:21:17.797 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 8.677ms
+2025-11-18 11:21:17.797 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-11-18 11:21:19.915 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar - null null
+2025-11-18 11:21:19.921 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-11-18 11:21:19.951 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-11-18 11:21:19.962 +01:00 [INF] This is an information messeage
+2025-11-18 11:21:19.970 +01:00 [WRN] This is a warning message
+2025-11-18 11:21:19.971 +01:00 [ERR] This is an error message
+2025-11-18 11:21:20.113 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-11-18 11:21:20.157 +01:00 [INF] Executed ViewResult - view Calendar executed in 44.4073ms.
+2025-11-18 11:21:20.157 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 205.5573ms
+2025-11-18 11:21:20.157 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-11-18 11:21:20.167 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar - 200 null text/html; charset=utf-8 251.2866ms
+2025-11-18 11:21:20.207 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-11-18 11:21:20.208 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-11-18 11:21:20.224 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 3.3964ms
+2025-11-18 11:21:20.225 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-11-18 11:21:20.225 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 16.6139ms
+2025-11-18 11:21:20.225 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-11-18 11:21:23.914 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Update/23 - null null
+2025-11-18 11:21:23.932 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-11-18 11:21:23.947 +01:00 [INF] Route matched with {action = "Update", controller = "Booking", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-11-18 11:21:24.003 +01:00 [INF] Executing ViewResult, running view Update.
+2025-11-18 11:21:24.063 +01:00 [INF] Executed ViewResult - view Update executed in 60.4185ms.
+2025-11-18 11:21:24.063 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Update (HealthApp) in 115.9361ms
+2025-11-18 11:21:24.063 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-11-18 11:21:24.064 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Update/23 - 200 null text/html; charset=utf-8 149.3625ms
+2025-11-18 11:21:24.116 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-11-18 11:21:24.118 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-11-18 11:21:24.119 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 3.5695ms
+2025-11-18 11:21:24.119 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-11-18 11:21:24.123 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 4.3404ms
+2025-11-18 11:21:24.123 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-11-18 11:21:27.567 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5257/Booking/Update/23 - application/x-www-form-urlencoded 376
+2025-11-18 11:21:27.579 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-11-18 11:21:27.608 +01:00 [INF] Route matched with {action = "Update", controller = "Booking", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(HealthApp.Models.Booking) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-11-18 11:21:27.758 +01:00 [INF] Executing RedirectResult, redirecting to /Booking/Calendar.
+2025-11-18 11:21:27.758 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Update (HealthApp) in 150.179ms
+2025-11-18 11:21:27.758 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Update (HealthApp)'
+2025-11-18 11:21:27.758 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5257/Booking/Update/23 - 302 0 null 191.7769ms
+2025-11-18 11:21:27.764 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar - null null
+2025-11-18 11:21:27.766 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-11-18 11:21:27.766 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-11-18 11:21:27.767 +01:00 [INF] This is an information messeage
+2025-11-18 11:21:27.768 +01:00 [WRN] This is a warning message
+2025-11-18 11:21:27.772 +01:00 [ERR] This is an error message
+2025-11-18 11:21:27.779 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-11-18 11:21:27.782 +01:00 [INF] Executed ViewResult - view Calendar executed in 2.6664ms.
+2025-11-18 11:21:27.782 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 15.4137ms
+2025-11-18 11:21:27.782 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-11-18 11:21:27.782 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar - 200 null text/html; charset=utf-8 18.534ms
+2025-11-18 11:21:27.842 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-11-18 11:21:27.843 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-11-18 11:21:27.845 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 3.4707ms
+2025-11-18 11:21:27.846 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-11-18 11:21:27.847 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 4.4614ms
+2025-11-18 11:21:27.847 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-11-18 11:21:31.074 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5257/Identity/Account/Logout?returnUrl=%2F - application/x-www-form-urlencoded 225
+2025-11-18 11:21:31.078 +01:00 [INF] Executing endpoint '/Account/Logout'
+2025-11-18 11:21:31.104 +01:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2025-11-18 11:21:31.112 +01:00 [INF] Executing handler method HealthApp.Areas.Identity.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2025-11-18 11:21:31.115 +01:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-11-18 11:21:31.117 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-11-18 11:21:31.118 +01:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-11-18 11:21:31.119 +01:00 [INF] User logged out.
+2025-11-18 11:21:31.119 +01:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-11-18 11:21:31.120 +01:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2025-11-18 11:21:31.121 +01:00 [INF] Executed page /Account/Logout in 16.4182ms
+2025-11-18 11:21:31.121 +01:00 [INF] Executed endpoint '/Account/Logout'
+2025-11-18 11:21:31.121 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5257/Identity/Account/Logout?returnUrl=%2F - 302 0 null 46.8928ms
+2025-11-18 11:21:31.127 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/ - null null
+2025-11-18 11:21:31.127 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.HomeController.Index (HealthApp)'
+2025-11-18 11:21:31.127 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HealthApp.Controllers.HomeController (HealthApp).
+2025-11-18 11:21:31.128 +01:00 [INF] Executing ViewResult, running view Index.
+2025-11-18 11:21:31.130 +01:00 [INF] Executed ViewResult - view Index executed in 2.8125ms.
+2025-11-18 11:21:31.131 +01:00 [INF] Executed action HealthApp.Controllers.HomeController.Index (HealthApp) in 3.2617ms
+2025-11-18 11:21:31.131 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.HomeController.Index (HealthApp)'
+2025-11-18 11:21:31.131 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/ - 200 null text/html; charset=utf-8 4.1345ms
+2025-11-18 11:21:31.187 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-11-18 11:21:31.188 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.9532ms
+2025-11-18 11:21:31.188 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-11-18 11:21:31.190 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-11-18 11:21:31.191 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 0.9503ms
+2025-11-18 11:21:31.191 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-11-18 11:21:34.259 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Calendar - null null
+2025-11-18 11:21:34.260 +01:00 [INF] Executing endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-11-18 11:21:34.260 +01:00 [INF] Route matched with {action = "Calendar", controller = "Booking", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Calendar(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller HealthApp.Controllers.BookingController (HealthApp).
+2025-11-18 11:21:34.262 +01:00 [INF] This is an information messeage
+2025-11-18 11:21:34.263 +01:00 [WRN] This is a warning message
+2025-11-18 11:21:34.263 +01:00 [ERR] This is an error message
+2025-11-18 11:21:34.267 +01:00 [INF] Executing ViewResult, running view Calendar.
+2025-11-18 11:21:34.271 +01:00 [INF] Executed ViewResult - view Calendar executed in 5.3549ms.
+2025-11-18 11:21:34.271 +01:00 [INF] Executed action HealthApp.Controllers.BookingController.Calendar (HealthApp) in 11.4322ms
+2025-11-18 11:21:34.271 +01:00 [INF] Executed endpoint 'HealthApp.Controllers.BookingController.Calendar (HealthApp)'
+2025-11-18 11:21:34.272 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Calendar - 200 null text/html; charset=utf-8 13.0794ms
+2025-11-18 11:21:34.325 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-11-18 11:21:34.327 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 1.0884ms
+2025-11-18 11:21:34.327 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-11-18 11:21:34.328 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-11-18 11:21:34.350 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 22.5455ms
+2025-11-18 11:21:34.350 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-11-18 11:21:37.639 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Booking/Update/23 - null null
+2025-11-18 11:21:37.645 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-18 11:21:37.652 +01:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-11-18 11:21:37.653 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Booking/Update/23 - 302 0 null 13.2424ms
+2025-11-18 11:21:37.665 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/Identity/Account/Login?ReturnUrl=%2FBooking%2FUpdate%2F23 - null null
+2025-11-18 11:21:37.666 +01:00 [INF] Executing endpoint '/Account/Login'
+2025-11-18 11:21:37.667 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-11-18 11:21:37.671 +01:00 [INF] Executing handler method HealthApp.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-11-18 11:21:37.671 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-11-18 11:21:37.671 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-11-18 11:21:37.671 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-11-18 11:21:37.671 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-11-18 11:21:37.677 +01:00 [INF] Executed page /Account/Login in 9.1506ms
+2025-11-18 11:21:37.677 +01:00 [INF] Executed endpoint '/Account/Login'
+2025-11-18 11:21:37.678 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/Identity/Account/Login?ReturnUrl=%2FBooking%2FUpdate%2F23 - 200 null text/html; charset=utf-8 12.2747ms
+2025-11-18 11:21:37.732 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - null null
+2025-11-18 11:21:37.733 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js - 404 0 null 1.0555ms
+2025-11-18 11:21:37.734 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unbtrusive/jquery.validate.unobtrusive.js, Response status code: 404
+2025-11-18 11:21:37.734 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2025-11-18 11:21:37.734 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2025-11-18 11:21:37.735 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 404 0 null 0.7224ms
+2025-11-18 11:21:37.735 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js, Response status code: 404
+2025-11-18 11:21:37.735 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validation/dist/jquery.validate.min.js - 404 0 null 0.7207ms
+2025-11-18 11:21:37.735 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validation/dist/jquery.validate.min.js, Response status code: 404
+2025-11-18 11:21:37.735 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - null null
+2025-11-18 11:21:37.736 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5257/lib/jquery-validate/jquery.validate.js - 404 0 null 0.9051ms
+2025-11-18 11:21:37.736 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5257/lib/jquery-validate/jquery.validate.js, Response status code: 404
+2025-11-18 11:21:43.594 +01:00 [INF] Application is shutting down...
