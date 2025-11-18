@@ -17,6 +17,7 @@ namespace HealthApp.Models
         // navigation property
         public virtual ICollection<Booking> Bookings { get; set; } = new List<Booking>();
 
+
     }
 
 }
